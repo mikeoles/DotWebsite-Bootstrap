@@ -1,0 +1,422 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lawyer Documentation</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link href="http://fonts.googleapis.com/css?family=Raleway:200,300,600" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+<style>
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+* {
+	padding: 0;
+	margin: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a, a:hover, a:focus, a:visited {
+	text-decoration: none;
+	outline: none;
+}
+h1 {
+	font-size: 50px;
+	line-height: 100px;
+	font-weight: 200;
+	font-family: "Raleway", sans-serif;
+}
+h2 {
+	font-size: 24px;
+	font-family: "Raleway", sans-serif;
+}
+h3 {
+	font-size: 18px;
+	font-weight: normal;
+	padding: 10px 0;
+	font-family: 'Open Sans', sans-serif;
+}
+body {
+	font: 14px/23px 'Open Sans', sans-serif;
+	color: #333;
+}
+.doc_sidebar {
+	height: 100%;
+	width: 200px;
+	float: left;
+	position: fixed;
+	background: #222;
+	box-shadow: 0 0 5px #333;
+}
+.doc_sidebar ul {
+	height: 500px;
+	margin-top: 100px;
+	border-top: 1px solid #444;
+}
+.doc_sidebar ul li {
+	list-style-type: none;
+	text-align: right;
+	text-transform: capitalize;
+	border-bottom: 1px solid #444;
+}
+.doc_sidebar ul li a {
+	padding: 8px 20px;
+	display: block;
+	color: #DDD;
+	font-size: 14px;
+}
+.doc_sidebar ul li a:hover, .doc_sidebar ul li a.active {
+	background: #DDD;
+	color: #333;
+}
+.doc_content {
+	width: calc(100% - 200px);
+	padding: 0 50px;
+	float: right;
+}
+.doc_content > div {
+	padding: 50px 0;
+}
+.doc_content a {
+	color: #a52b2b;
+}
+.doc_content a:hover {
+	text-decoration: underline;
+}
+p, .list {
+	margin: 10px 0;
+}
+.list li {
+	padding-left: 5px;
+	margin-left: 25px;
+	list-style-type: square;
+}
+pre {
+	line-height: 15px;
+}
+.title {
+	font-size: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px dashed #999;
+}
+#one {
+	padding: 200px 0;
+	min-height: 1000px;
+}
+#seven {
+	margin-bottom: 50px;
+}
+</style>
+</head>
+<body>
+<section class="doc_sidebar">
+    <ul>
+        <li><a class="active" href="#one">Start</a></li>
+        <li><a href="#two">HTML Files</a></li>
+        <li><a href="#three">HTML Structure</a></li>
+        <li><a href="#four">Fonts Used</a></li>
+        <li><a href="#five">CSS Files and Structure</a></li>
+        <li><a href="#six">JavaScript Files</a></li>
+        <li><a href="#seven">Sources and Credits</a></li>
+    </ul>
+</section>
+<section class="doc_content">
+    <div id="one">
+        <h1>INVENTIVE</h1>
+        <h2>Multipurpose &nbsp;Responsive &nbsp;HTML5 &nbsp;template</h2>
+        <h2 class="title"></h2>
+    </div>
+    <div id="two">
+        <h2 class="title">HTML Files</h2>
+        <p>This template has 31 HTML files:</p>
+        <ul class="list">
+            <li>home_layout_1.html</li>
+            <li>home_layout_2.html</li>
+            <li>home_layout_3.html</li>
+            <li>home_one_page_layout_1.html</li>
+            <li>home_one_page_layout_2.html</li>
+            <li>home_one_page_layout_3.html</li>
+            <li>home_owl_slider.html</li>
+            <li>home_parallax_banner.html</li>
+            <li>home_video_banner.html</li>
+            <li>about_layout_1.html</li>
+            <li>about_layout_2.html</li>
+            <li>services_layout_1.html</li>
+            <li>services_layout_2.html</li>
+            <li>blog_col_1_bottom_menu.html</li>
+            <li>blog_col_1_left_sidebar.html</li>
+            <li>blog_col_1_right_sidebar.html</li>
+            <li>blog_col_2_bottom_menu.html</li>
+            <li>blog_col_2_left_sidebar.html</li>
+            <li>blog_col_2_right_sidebar.html</li>
+            <li>blog_single_post.html</li>
+            <li>portfolio_col_2.html</li>
+            <li>portfolio_col_3.html</li>
+            <li>portfolio_col_4.html</li>
+            <li>portfolio_col_5.html</li>
+            <li>portfolio_full_width.html</li>
+            <li>portfolio_single_col.html</li>
+            <li>faq.html</li>
+            <li>404_error.html</li>
+            <li>contact_layout_1.html</li>
+            <li>contact_layout_2.html</li>
+            <li>shortcodes.html</li>
+        </ul>
+    </div>
+    <div id="three">
+        <h2 class="title">HTML Structure</h2>
+        <pre>
+    
+ &lt;head&gt;
+    
+     &lt;!--meta info--&gt;
+        
+     &lt;!--include stylesheets, fonts and font-icons--&gt;
+
+ &lt;/head&gt;
+ &lt;body&gt;
+ 
+	&lt;!--preloader--&gt;
+    
+    &lt;!--wrapper--&gt;
+     	
+         &lt;!--header--&gt;
+        
+         	&lt;!--top head--&gt;
+            
+		&lt;!--navbar--&gt; 
+         
+         &lt;!--slider--&gt;
+         
+         &lt;!--description--&gt;
+         
+         &lt;!--features--&gt;
+         
+         &lt;!--home block 1--&gt;
+         
+         &lt;!--home block 2--&gt;
+         
+         &lt;!--counters--&gt;
+         
+         &lt;!--services--&gt;
+         
+         &lt;!--workprocess--&gt;
+         
+         &lt;!--gallery--&gt;
+         
+         &lt;!--news--&gt;
+         
+         &lt;!--testimonials--&gt;
+         
+         &lt;!--team--&gt;
+         
+         &lt;!--subscribe--&gt;
+         
+         &lt;!--clients--&gt;
+         
+         &lt;!--contact--&gt;
+         
+         &lt;!--map--&gt;
+         
+         &lt;!--footer--&gt;
+            
+            &lt;!--social icons--&gt;
+         
+            &lt;!--Copyright--&gt;
+            
+     &lt;!--wrapper close--&gt;
+     
+     &lt;!--go-top link--&gt;
+     
+     &lt;!--Modal Box--&gt;
+     
+     &lt;!--Style switcher--&gt;
+     
+     &lt;!--Scripts--&gt;
+      
+ &lt;/body&gt; 
+	</pre>
+    </div>
+    <div id="four">
+        <h2 class="title">Fonts Used</h2>
+        <p>This template uses 2 Google Fonts:</p>
+        <ul class="list">
+            <li>Raleway</li>
+            <li>Ubuntu</li>
+        </ul>
+        <p>Font-Awesome used for glyphicons</p>
+    </div>
+    <div id="five">
+        <h2 class="title">CSS Files and Structure</h2>
+        <p>This template uses 13 css files:</p>
+        <ul class="list">
+            <li>pre_loader.css</li>
+            <li>bootstrap.min.css</li>
+            <li>waypoints.css</li>
+            <li>animate.css</li>
+            <li>back_to_top.css</li>
+            <li>style_switcher.css</li>
+            <li>gallery.css</li>
+            <li>magnific-popup.css</li>
+            <li>owl.carousel.css</li>
+            <li>owl.theme.css</li>
+            <li>owl.transitions.css</li>
+            <li>style.css</li>
+            <li>theme_style.less</li>
+        </ul>
+        <h3>The main CSS file is style.css and has the following structure:</h3>
+        <ul class="list">
+            <li>/*Default Styles*/</li>
+            <li>/*Short Codes & Form Elements*/</li>
+            <li>/*Top Head Styles*/</li>
+            <li>/*Bootstrap Navbar*/</li>
+            <li>/*For Mega Menu*/</li>
+            <li>/*Banner*/</li>
+            <li>/*Features*/</li>
+            <li>/*Features_2 & Features_3*/</li>
+            <li>/*Home_block 2 & 3*/</li>
+            <li>/*Counters*/</li>
+            <li>/*Services*/</li>
+            <li>/*Workprocess*/</li>
+            <li>/*Model Box*/</li>
+            <li>/*Gallery*/</li>
+            <li>/*News*/</li>
+            <li>/*Testimonials*/</li>
+            <li>/*Team*/</li>
+            <li>/*Subscribe*/</li>
+            <li>/*Clients*/</li>
+            <li>/*Contact Us*/</li>
+            <li>/*Map*/</li>
+            <li>/*Footer*/</li>
+            <li>/*Sidebar*/</li>
+            <li>/*Accordion*/</li>
+            <li>/*Pricing*/</li>
+            <li>/*404*/</li>
+            <li>/*Breadcrumb*/</li>
+            <li>/*waypoints*/</li>
+            <li>/*Buy_now*/</li>
+            <h3>Responsive Styles</h3>
+            <li>/*Mobile and Tablet Screen*/</li>
+            <li>/*Mobile Screen*/</li>
+            <li>/*Tablet and Desktop Screen*/</li>
+            <li>/*Tablet Screen*/</li>
+            <li>/*Desktop Screen*/</li>
+            <li>/*Desktop and Large Desktop Screen*/</li>
+            <li>/*Large Desktop Screen*/</li>
+            <li>/*Custom Screens*/</li>
+            <h3>Animations</h3>
+            <li>/*Animations*/</li>
+        </ul>
+        &nbsp;
+        <p></p>
+    </div>
+    <div id="six">
+        <h2 class="title">JavaScript Files</h2>
+        <p> This template includes 16 Javascript files.</p>
+        <ul>
+            <li>jquery-1.11.1-min.js</li>
+            <li>Preload Script</li>
+            <li>bootstrap.min.js</li>
+            <li>less-2.5.1-min.js"></li>
+            <li>style_switcher.js"></li>
+            <li>custom_jquery.js</li>
+            <li>waypoints.min.js</li>
+            <li>waypoint.plugin.js</li>
+            <li>jquery.appear.js</li>
+            <li>animate.js</li>
+            <li>jquery.magnific-popup.min.js</li>
+            <li>owl.carousel.min.js</li>
+            <li>jquery.counterup.min.js</li>
+            <li>maps.google.com/maps/api/js?sensor</li>
+            <li>gmaps.min.js</li>
+            <li>gmap_script.js</li>
+        </ul>
+    </div>
+    <div id="seven">
+        <h2 class="title">Sources and Credits</h2>
+        <p></p>
+        <h2 style="font-weight:200;"><span>&#8220;</span> We want to appreciate and thanks everyone who helped us to make this great Template <span>&#8221;</span></h2>
+        <p></p>
+        <h3>Script Credits:</h3>
+        <ul>
+            <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> - Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</li>
+            <li><a href="http://jquery.com/" target="_blank">jQuery</a> - jQuery is a fast, small, and feature-rich JavaScript library</li>
+            <li><a href="http://lesscss.org/" target="_blank">LESS</a> - Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable</li>
+            <li><a href="https://fortawesome.github.io/Font-Awesome/license/" target="_blank">Font Awesome</a> - The iconic font and CSS toolkit</li>
+            <li><a href="https://github.com/imakewebthings/waypoints" target="_blank">waypoints.min.js</a> - Waypoints is a jQuery plugin that makes it easy to execute a function whenever you scroll to an element.</li>
+            <li><a href="https://github.com/bas2k/jquery.appear/" target="_blank">jquery.appear.js</a> - jQuery plugin to call a function when an element appears</li>
+            <li><a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a> - Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device</li>
+            <li><a href="http://owlcarousel.owlgraphic.com/docs/started-welcome.html" target="_blank">Owl Carousel</a> - No matter if you are a beginner or an advanced user, starting with Owl is easy.</li>
+            <li><a href="https://github.com/bfintal/Counter-Up" target="_blank">Counter-Up</a> - Counter-Up is a lightweight jQuery plugin that counts up to a targeted number when the number becomes visible</li>
+            <li><a href="https://hpneo.github.io/gmaps/" target="_blank">Gmaps</a> - gmaps.js allows you to use the potential of Google Maps in a simple way.</li>
+        </ul>
+        <p></p>
+        <p></p>
+        <h3>Style Credits:</h3>
+        <ul>
+            <li><a href="https://github.com/daneden/animate.css/" target="_blank">Animate.css</a> - A cross-browser library of CSS animations. As easy to use as an easy thing.</li>
+        </ul>
+        <p></p>
+        <h3>Image Credits:</h3>
+        <ul>
+            <li><a href="https://www.pexels.com/" target="_blank">Pexels</a></li>
+            <li><a href="https://www.flickr.com/people/carianoff/" target="_blank">Michael Carian </a></li>
+            <li><a href="https://www.flickr.com/people/markusspiske/" target="_blank">Markus Spiske</a></li>
+            <li><a href="https://www.flickr.com/people/jonathankosread/" target="_blank">Jonathan Kos-Read</a></li>
+            <li><a href="http://www.gratisography.com/" target="_blank">Gratisography</a></li>
+            <li><a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
+        </ul>
+        <p></p>
+        <p></p>
+        <h3>Video Credits:</h3>
+        <ul>
+            <li><a href="https://videos.pexels.com" target="_blank">videos.pexels.com</a> - You are guaranteed to find the perfect footage for your website header, product promotion, or anything else.</li>
+        </ul>
+        <p></p>
+        <p></p>
+        <h3>Fonts Credits:</h3>
+        <ul>
+            <li><a href="https://www.google.com/fonts/" target="_blank">Google Fonts</a></li>
+        </ul>
+        <p></p>
+         <div class="title"></div>
+        <h3> We have used Premium Isotope Gallery Plugin.</h3>
+        <ul>
+            <li><a href="http://isotope.metafizzy.co/" target="_blank">http://isotope.metafizzy.co/</a>: Related isotope-commercial-developer-license file is included with template.</li>
+           
+        </ul>
+        <p></p>
+        <div class="title"></div>
+        <h3> We have used 2 Premium images for Demo purpose from Photodune, These premium images are not include for this template. You can buy from the following links.</h3>
+        <ul>
+            <li><a href="http://photodune.net/item/urban-life/2360371" target="_blank">http://photodune.net/item/urban-life/2360371</a></li>
+            <li><a href="http://photodune.net/item/coloring/3326793" target="_blank">http://photodune.net/item/coloring/3326793</a></li>
+        </ul>
+        <p></p>
+        <div class="title"></div>
+        <p> Once again, thank you so much for purchasing this theme. As we said at the beginning, I&#39;d be glad to help you if you have any questions relating to this theme. No guarantees, but I&#39;ll do our best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the &quot;Item Discussion&quot; - <a href="http://inventivetemplates.com/support/" target="_blank">http://inventivetemplates.com/support/</a>.</p>
+    </div>
+</section>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script> 
+<script>
+	$(document).ready(function(e) {
+        
+		$('a').click(function(){
+			$('html, body').animate({
+				scrollTop: $( $.attr(this, 'href') ).offset().top
+			}, 500);
+			return false;
+		});
+		
+		$('.doc_sidebar ul li a').click(function(e) {
+            $('.doc_sidebar ul li a').removeClass('active');
+            $(this).addClass('active');
+        });
+		
+    });
+	
+</script>
+</body>
+</html>
